@@ -11,5 +11,12 @@
     ".json": "text/json",
     ".css": "text/css",
     ".js": "text/javascript"
-  }
+  },
+  "routes": [
+    {
+      "route": "/*",
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ]
 }
