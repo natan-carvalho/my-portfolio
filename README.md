@@ -1,73 +1,35 @@
-# React + TypeScript + Vite
+# 💼 My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-2023-blue?logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)
+![Azure Static Web Apps](https://img.shields.io/badge/Deployed%20on-Azure%20Static%20Web%20Apps-0078D4?logo=azure)
+![License](https://img.shields.io/github/license/natan-carvalho/my-portfolio)
+![Last Commit](https://img.shields.io/github/last-commit/natan-carvalho/my-portfolio)
 
-Currently, two official plugins are available:
+Portfólio pessoal desenvolvido com React e TypeScript, publicado na Azure Static Web Apps. O objetivo é apresentar meus projetos, habilidades e trajetória como desenvolvedor front-end.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Acesse o site publicado:**
+[https://green-forest-0ee3df11e.2.azurestaticapps.net/](https://green-forest-0ee3df11e.2.azurestaticapps.net/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧰 Tecnologias e Ferramentas
 
-## Expanding the ESLint configuration
+| Categoria         | Ferramenta                          |
+|------------------|-------------------------------------|
+| Framework        | [React](https://reactjs.org/)       |
+| Linguagem        | [TypeScript](https://www.typescriptlang.org/)              |
+| Estilização      | [Tailwind CSS](https://www.typescriptlang.org/)                                |
+| Rotas            | [React Router DOM](https://reactrouter.com/) |
+| Deploy           | [Azure Static Web Apps](https://learn.microsoft.com/en-us/azure/static-web-apps/) |
+| CI/CD            | GitHub Actions                      |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🗺️ Estrutura de Rotas
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O projeto utiliza `React Router DOM` para navegação entre páginas:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- `/` — Página inicial com apresentação pessoal
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
